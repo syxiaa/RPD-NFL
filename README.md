@@ -1,0 +1,4 @@
+Relative Probability Density based Class Noise Filtering Learning Framework
+
+What is RPD-NFL?
+RPD-Learning is a learning framework that use RPD model to filtering significant class noise. The relative probability density (RPD) that recognizes the samples whose values of P(X|-Y)/P(X|Y) are larger than an adaptive value as label noise. The probability ratio in the RPD can be directly calculated by the Kullback-Leibler-Importance-Estimation, which is effective in complex data. The ratio P(X|-Y)/P(X|Y) is deducted into a new form that contains only P(Y|X) such that it does not rely on any specific loss function. So far, it contains four loss function including kernel hinge loss, kernel logistic loss, linear hinge loss and linear logistic loss. In addtion, this library contains state-of-the-art class noise detection method and class noise toleratent algorithm, seprabely called as "relative probability density model" and "learning with importance reweighting".
